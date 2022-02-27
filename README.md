@@ -221,9 +221,16 @@ The current version contains 25 classes, and there are four images for each clas
 
 ## <a name="usage"></a>Usage and organisation
 1. Download the dataset from [images.zip](https://drive.google.com/file/d/1001xz0vafHuklEK_Byyfv6QhvXJyasD-/view?usp=sharing)
-2. Uncompress the folder
+2. Unzip the folder
 
-The datset has the following folder structure: .<rotationAngle><className_rotationAngle_sample>.bmp
+Once uncompressed the dataset has the following structure:
+
+`./<rotationAngle>/<className_rotationAngle_sample>.bmp`
+
+- `<rotationAngle>` indicates the in-plane rotation angle at which the tile was imaged. This can be `00`, `10`, `20`, `30`, `40`, `50`, `60`, `70`,  `80` or `90`.
+- `<className>` represents the class name — that is, the commercial denomination of the granite. This can be any of the 25 class names listed above.
+- `<sample>` is a two-digit code that uniquely identifies the tile. There are four tiles for each class and angle). 
+
 
 ## <a name="image-acquisition"></a>Image acquisition
 
