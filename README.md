@@ -1,15 +1,9 @@
 # MondialMarmi: A collection of images of polished natural stones for colour and texture analysis
 
-### [Description](#description)
-### [Usage and organisation](#usage-and-organisation)
-### [Image acquisition](#image-acquisition)
-### [Contributors](#contributors)
-### [How to cite](#how-to-cite)
-
-## <a name="description"></a>Description
+## Description
 MondialMarmi is a collection of colour images of polished natural stones for image processing purposes. It was originally conceived for benchmarking colour and texture descriptors.
 
-The current version contains 25 classes, and there are four images for each class. Each image correspond to one tile. The images were acquired under controlled illumination conditions (see [Image Acquisition](#image-acquisition) for a description of the acquisition setup). Each tile was imaged under the following in-plane rotation angles: 0°, 10°, 20°, 30°, 40°, 50°, 60°, 70°, 80° and 90°.
+The current version contains 25 classes, and there are four images for each class. Each image correspond to one tile. The images were acquired under controlled illumination conditions (see Image acquisition) for a description of the acquisition setup). Each tile was imaged under the following in-plane rotation angles: 0°, 10°, 20°, 30°, 40°, 50°, 60°, 70°, 80° and 90°.
 
 ### Classes
 <table>
@@ -222,7 +216,7 @@ The current version contains 25 classes, and there are four images for each clas
 
 </table>
 
-## <a name="usage-and-organisation"></a>Usage and organisation
+## Usage and organisation
 1. Download the dataset from [images.zip](https://drive.google.com/file/d/1001xz0vafHuklEK_Byyfv6QhvXJyasD-/view?usp=sharing)
 2. Unzip the folder
 
@@ -235,7 +229,7 @@ Once uncompressed the dataset has the following structure:
 - `<sample>` is a two-digit code that uniquely identifies the tile. There are four tiles for each class and angle).
 
 
-## <a name="image-acquisition"></a>Image acquisition
+## Image acquisition
 The acquisition process was carried out through a system composed of a base with a slot to accommodate the tile, a dome illuminator and a digital camera (see Fig. 1). A rotatable support at the top of the dome made it possible to acquire images under different rotation angles. Each tile was placed in the slot and 10 images were taken at different rotation angles from 0° to 90° by steps of 10°.
 
 <img alt="Acquisition system"
@@ -272,10 +266,10 @@ The camera settings were:
 
 
 
-## <a name="contributors"></a>Contributors
+## Contributors
 [Francesco Bianconi](https://www.bianconif.net) and [Antonio Fernández](http://antfdez.webs.uvigo.es/)
 
-## <a name="how-to-cite"></a>How to cite
+## How to cite
 If you wish to use this dataset for your research activity please consider referencing the following papers (where appropriate):
 
 1. Bello-Cerezo, R., Bianconi, F., Fernández, A., González, E., Di Maria, F. [Experimental comparison of color spaces for material classification](https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-25/issue-6/061406/Experimental-comparison-of-color-spaces-for-material-classification/10.1117/1.JEI.25.6.061406.short?SSO=1) (2016) Journal of Electronic Imaging, 25 (6), art. no. 061406
