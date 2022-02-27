@@ -1,7 +1,8 @@
 # MondialMarmi: A collection of images of polished natural stones for colour and texture analysis
 
-## [Description](#description)
-## [Image acquisition](#image-acquisition)
+### [Description](#description)
+### [Usage and organisation](#usage-and-organisation)
+### [Image acquisition](#image-acquisition)
 
 ## <a name="description"></a>Description
 MondialMarmi is a collection of colour images of polished natural stones for image processing purposes. It was originally conceived for benchmarking colour and texture descriptors.
@@ -219,7 +220,7 @@ The current version contains 25 classes, and there are four images for each clas
 
 </table>
 
-## <a name="usage"></a>Usage and organisation
+## <a name="usage-and-organisation"></a>Usage and organisation
 1. Download the dataset from [images.zip](https://drive.google.com/file/d/1001xz0vafHuklEK_Byyfv6QhvXJyasD-/view?usp=sharing)
 2. Unzip the folder
 
@@ -229,10 +230,45 @@ Once uncompressed the dataset has the following structure:
 
 - `<rotationAngle>` indicates the in-plane rotation angle at which the tile was imaged. This can be `00`, `10`, `20`, `30`, `40`, `50`, `60`, `70`,  `80` or `90`.
 - `<className>` represents the class name — that is, the commercial denomination of the granite. This can be any of the 25 class names listed above.
-- `<sample>` is a two-digit code that uniquely identifies the tile. There are four tiles for each class and angle). 
+- `<sample>` is a two-digit code that uniquely identifies the tile. There are four tiles for each class and angle).
 
 
 ## <a name="image-acquisition"></a>Image acquisition
+The acquisition process was carried out through a system composed of a base with a slot to accommodate the tile, a dome illuminator and a digital camera (see Fig. 1). A rotatable support at the top of the dome made it possible to acquire images under different rotation angles. Each tile was placed in the slot and 10 images were taken at different rotation angles from 0° to 90° by steps of 10°.
+
+<img alt="Acquisition system"
+     title="Acquisition system"
+     src="thumbnails/AcquisitionSystem.jpg"
+     width="300px" height="300px" border="0">
+
+Fig. 1 The acquisition system (IT patent no. 1413266)
+
+The illumination conditions were kept constant throughout the whole acquisition process. The images were captured at the natural resolution of the camera's sensor (2560px × 1920px), and were finally cropped to a central part of size 1500px × 1500px, corresponding to an area of ≈21cm × 21cm.
+
+For colour calibration an X-Rite Digital SG colour checker (140 colour targets) was also put in place and imaged. The RGB values of the 140 colour targets were acquired using the same settings adopted for the tiles; the corresponding device-independent CIE XYZ coordinates (under illuminant D65) were measured through a Minolta CR-200 Chroma Meter ([CalibrationData.csv](data/CalibrationData.csv), [CalibrationData.pdf](data/CalibrationData.pdf)).
+
+### Technical data
+
+#### Illuminator
+Spectrum Illumination Monster Dome Light 18.25" with white HB LEDs. Technical data available [here](https://spectrumillumination.com/products/dl18-25monsterseries/).
+
+The illumination settings were:
+- Voltage 15V
+- Average illumination level at the surface of the tiles ≈600lx
+
+#### Camera
+Edmund Optics EO-5012C LE.
+
+The camera settings were:
+- Image size: 2560px x 1920px
+- image format: BMP
+- Encoding: linear (no gamma correction)
+- Frame rate: 2.40fps
+- Exposure time: maximum allowed by the frame rate
+- Overall gain: 1x
+- Colour gain (determined through white balancing): R = 14x, G = 1x and B = 5x
+
+
 
 ## Contributors
 [Francesco Bianconi](https://www.bianconif.net) and [Antonio Fernández](http://antfdez.webs.uvigo.es/)
