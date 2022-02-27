@@ -3,6 +3,8 @@
 ### [Description](#description)
 ### [Usage and organisation](#usage-and-organisation)
 ### [Image acquisition](#image-acquisition)
+### [Contributors](#contributors)
+### [How to cite](#how-to-cite)
 
 ## <a name="description"></a>Description
 MondialMarmi is a collection of colour images of polished natural stones for image processing purposes. It was originally conceived for benchmarking colour and texture descriptors.
@@ -270,10 +272,10 @@ The camera settings were:
 
 
 
-## Contributors
+## <a name="contributors"></a>Contributors
 [Francesco Bianconi](https://www.bianconif.net) and [Antonio Fernández](http://antfdez.webs.uvigo.es/)
 
-## How to cite
+## <a name="how-to-cite"></a>How to cite
 If you wish to use this dataset for your research activity please consider referencing the following papers (where appropriate):
 
 1. Bello-Cerezo, R., Bianconi, F., Fernández, A., González, E., Di Maria, F. [Experimental comparison of color spaces for material classification](https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-25/issue-6/061406/Experimental-comparison-of-color-spaces-for-material-classification/10.1117/1.JEI.25.6.061406.short?SSO=1) (2016) Journal of Electronic Imaging, 25 (6), art. no. 061406
